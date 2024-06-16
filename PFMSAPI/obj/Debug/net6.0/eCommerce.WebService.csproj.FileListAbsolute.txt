@@ -1,0 +1,7 @@
+C:\KavitaProjects\Ecommerce_Github\API\PFMSAPI\PFMSAPI\obj\Debug\net6.0\eCommerce.WebService.csproj.AssemblyReference.cache
+C:\KavitaProjects\Ecommerce_Github\API\PFMSAPI\PFMSAPI\obj\Debug\net6.0\eCommerce.WebService.GeneratedMSBuildEditorConfig.editorconfig
+C:\KavitaProjects\Ecommerce_Github\API\PFMSAPI\PFMSAPI\obj\Debug\net6.0\eCommerce.WebService.AssemblyInfoInputs.cache
+C:\KavitaProjects\Ecommerce_Github\API\PFMSAPI\PFMSAPI\obj\Debug\net6.0\eCommerce.WebService.AssemblyInfo.cs
+C:\KavitaProjects\Ecommerce_Github\API\PFMSAPI\PFMSAPI\obj\Debug\net6.0\eCommerce.WebService.csproj.CoreCompileInputs.cache
+C:\KavitaProjects\Ecommerce_Github\API\PFMSAPI\PFMSAPI\obj\Debug\net6.0\eCommerce.WebService.MvcApplicationPartsAssemblyInfo.cs
+C:\KavitaProjects\Ecommerce_Github\API\PFMSAPI\PFMSAPI\obj\Debug\net6.0\eCommerce.WebService.MvcApplicationPartsAssemblyInfo.cache

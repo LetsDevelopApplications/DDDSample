@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ONAKcQ5KulcEg30c2LR9QKXARnLrxF26iU76smV9jnI=",
+  "Source": "PFMSAPI",
+  "BasePath": "_content/PFMSAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

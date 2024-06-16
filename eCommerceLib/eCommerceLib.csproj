@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{088A9A3B-A884-4AEE-945A-B07870AE006D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eCommerceLib</RootNamespace>
+    <AssemblyName>eCommerceLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\eCommerce\bin\Debug\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\eCommerce\bin\Debug\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\..\..\..\GithubProjects\Domain-Driven-Design-Example-master\Domain-Driven-Design-Example-master\eCommerce\bin\Debug\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\..\..\..\..\GithubProjects\Domain-Driven-Design-Example-master\Domain-Driven-Design-Example-master\eCommerce\bin\Debug\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\GithubProjects\Domain-Driven-Design-Example-master\Domain-Driven-Design-Example-master\eCommerce\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationLayer\Products\IProductService.cs" />
+    <Compile Include="ApplicationLayer\Products\ProductDto.cs" />
+    <Compile Include="ApplicationLayer\Products\ProductService.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="DomainModelLayer\Products\Product.cs" />
+    <Compile Include="DomainModelLayer\Products\ProductCode.cs" />
+    <Compile Include="DomainModelLayer\Products\ProductCodeCreated.cs" />
+    <Compile Include="DomainModelLayer\Products\ProductCreated.cs" />
+    <Compile Include="DomainModelLayer\Products\Return.cs" />
+    <Compile Include="Helpers\DomainEvent.cs" />
+    <Compile Include="Helpers\DomainEventHandle.cs" />
+    <Compile Include="Helpers\DomainEventRecord.cs" />
+    <Compile Include="Helpers\DomainEvents.cs" />
+    <Compile Include="Helpers\Handle.cs" />
+    <Compile Include="Helpers\IAggregateRoot.cs" />
+    <Compile Include="Helpers\IDomainService.cs" />
+    <Compile Include="Helpers\Logging\IRequestCorrelationIdentifier.cs" />
+    <Compile Include="Helpers\Repository\IDomainEventRepository.cs" />
+    <Compile Include="Helpers\Repository\IRepository.cs" />
+    <Compile Include="Helpers\Repository\IUnitOfWork.cs" />
+    <Compile Include="Helpers\Specification\And.cs" />
+    <Compile Include="Helpers\Specification\IExtensions.cs" />
+    <Compile Include="Helpers\Specification\ISpecification.cs" />
+    <Compile Include="Helpers\Specification\Negate.cs" />
+    <Compile Include="Helpers\Specification\Or.cs" />
+    <Compile Include="Helpers\Specification\SpecificationBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="InfrastructureLayer\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
